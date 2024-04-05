@@ -26,6 +26,7 @@ requirements:
     - xarray
     - utm
     - geopy
+    - dask
 
 test:
   imports:
