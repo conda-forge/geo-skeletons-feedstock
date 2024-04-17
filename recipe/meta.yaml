@@ -1,5 +1,5 @@
 {% set name = "geo-skeletons" %}
-{% set version = "0.9.12" %}
+{% set version = "0.13.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/geo_skeletons-{{ version }}.tar.gz
-  sha256: ed8af246ad86c7e5581279c269777beced661d663293a0f214ca5c9df35d1a3a
+  sha256: 388174946b33a5c3900cb2f97fe780f8e7c6d7a6306a5a6b735e4cb9af7c0e9c
 
 build:
   noarch: python
