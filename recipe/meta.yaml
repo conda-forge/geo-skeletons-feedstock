@@ -27,6 +27,7 @@ requirements:
     - utm
     - geopy
     - dask
+    - geo-parameters>=0.2.6
 
 test:
   imports:
