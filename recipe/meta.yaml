@@ -16,11 +16,12 @@ build:
 
 requirements:
   host:
-    - python >=3.9
+    - python >=3.9,<3.12
     - pip
+    - setuptools
     - flit
   run:
-    - python >=3.9
+    - python >=3.9,<3.12
     - numpy
     - pandas
     - xarray
