@@ -28,7 +28,8 @@ requirements:
     - utm
     - geopy
     - dask
-    - geo-parameters >=0.2.7
+    - scipy
+    - geo-parameters >=0.9.4
 
 test:
   imports:
