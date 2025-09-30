@@ -1,5 +1,5 @@
 {% set name = "geo-skeletons" %}
-{% set version = "0.20.11" %}
+{% set version = "0.20.13" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/geo_skeletons-{{ version }}.tar.gz
-  sha256: 78031a7648e9f1d98e2399855dee9219c106a399a34553382148e30df86321ef
+  sha256: e3d31b63b739a3f6266cb488270318aea5078edf627e0d9766b6d8b53c5d9b1d
 
 build:
   noarch: python
@@ -21,7 +21,7 @@ requirements:
     - setuptools
     - flit
   run:
-    - python >={{ python_min }},<3.12
+    - python >={{ python_min }},<=3.13
     - numpy
     - pandas
     - xarray
@@ -29,7 +29,7 @@ requirements:
     - geopy
     - dask
     - scipy
-    - geo-parameters >=0.9.4
+    - geo-parameters >=0.10.0
 
 test:
   imports:
