@@ -12,16 +12,16 @@ source:
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
-  number: 0
+  number: 1
 
 requirements:
   host:
-    - python {{ python_min }}
+    - python >=3.9,<=3.13
     - pip
     - setuptools
     - flit
   run:
-    - python >={{ python_min }},<=3.13
+    - python >=3.9,<=3.13
     - numpy
     - pandas
     - xarray
@@ -36,7 +36,7 @@ test:
     - geo_skeletons
   requires:
     - pip
-    - python {{ python_min }}
+    - python 3.9
   commands:
     - pip check
 
